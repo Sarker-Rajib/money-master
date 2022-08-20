@@ -1,12 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Money Master | Home</title>
+   <title>Money Master</title>
+   <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-   
+   <!-- header starts here -->
+   <header>
+      <section class="pt-4">
+         <h1 class="text-5xl font-semibold text-center">
+            <span class="text-6xl text-pink-400">! Money Master ! </span>
+         </h1>
+      </section>
+   </header>
+   <!-- header ends here -->
+
+   <!-- main section starts from here -->
+   <main>
+      <section class="w-3/4 mx-auto pt-8">
+         <div class="grid grid-cols-2">
+            <div class="image">
+               <img src="images/Banner.png" alt="image" class="w-100 object-cover">
+            </div>
+
+            <div class="form px-4 text-end">
+               <h4 class="text-3xl">Income</h4>
+               <div class="pb-4">
+                  <span>Income</span>
+                  <input id="incomeAmount" type="text" class="bg-gray-300 p-2 rounded" placeholder="Your income in number">
+               </div>
+
+               <h4>Expence</h4>
+               <div class="pb-4">
+                  <span>Food</span>
+                  <input id="food-cost" type="text" placeholder="food cost" class="bg-gray-300 p-2 rounded">
+               </div>
+               <div class="pb-4">
+                  <span>Rent</span>
+                  <input id="rent-cost" type="text" placeholder="rent" class="bg-gray-300 p-2 rounded">
+               </div>
+               <div class="pb-4">
+                  <span>Clothes</span>
+                  <input id="cloth-cost" type="text" placeholder="clothes cost" class="bg-gray-300 p-2 rounded">
+               </div>
+
+               <div class="pb-4">
+                  <button id="calculate-button" class="btn bg-blue-400 rounded p-2">Calculate</button>
+               </div>
+
+               <div class="pb-4">
+                  <p>Total Expence: <span id="expence-total">0</span></p>
+                  <p>Balance: <span id="balance">0</span></p>
+               </div>
+
+               <div class="pb-4">
+                  <div class="pb-3">
+                     <span>Save</span>
+                     <input id="savingPercentage" type="text" placeholder="20" class="bg-gray-300 mx-2 p-2 rounded"><span>%</span>
+                  </div>
+                  <button id="save-button" class="btn bg-blue-400 rounded p-2">Save</button>
+               </div>
+
+               <div class="pb-4">
+                  <p>Saving Amount: <span id="save-amount">0</span></p>
+                  <p>Remaining Balance: <span id="remaining-balance">0</span></p>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <!-- main section ended here -->
+
+   <!-- scripts are linked below -->
+   <script src="js/utilities.js"></script>
+   <script src="js/calculate.js"></script>
 </body>
 </html>
