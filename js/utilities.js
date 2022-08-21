@@ -2,6 +2,7 @@ function getValueFromInput(inputFieldId){
    const inputField = document.getElementById(inputFieldId);
    const inputValuestring = inputField.value;
    const inputValue = parseFloat(inputValuestring);
+   // inputField.value = '';
 
    return inputValue;
 }
