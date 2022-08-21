@@ -23,7 +23,7 @@ document.getElementById('calculate-button').addEventListener('click', function (
 
    // validation of 
    if(income < totalCost){
-      alert('this is not possible');
+      alert('How expence is greater than income !');
       return;
    }
 
